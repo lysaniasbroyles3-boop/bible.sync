@@ -1,0 +1,273 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FaithPath | Bible Study</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="logo">
+        <div class="logo-icon">✝</div>
+        <span>FaithPath</span>
+      </div>
+
+      <p class="nav-label">STUDY</p>
+
+      <button class="nav-button active" id="studyNav">
+        📖 <span>Bible Study</span>
+      </button>
+
+      <button class="nav-button" id="dashboardBtn">
+        🏠 <span>Dashboard</span>
+      </button>
+
+      <button class="nav-button" id="progressBtn">
+        📊 <span>My Progress</span>
+      </button>
+
+      <p class="nav-label">ACCOUNT</p>
+
+      <button class="nav-button" id="resetBtn">
+        🔄 <span>Reset Progress</span>
+      </button>
+
+      <div class="sidebar-tip">
+        <strong>Keep growing.</strong>
+        <p>
+          Spend a few minutes in God's Word every day.
+        </p>
+      </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- HEADER -->
+      <header class="topbar">
+
+        <div>
+          <p class="small-text">YOUR BIBLE JOURNEY</p>
+          <h1>Grow in the Word.</h1>
+          <p class="subtitle">
+            Continue today's Bible study.
+          </p>
+        </div>
+
+        <div class="profile">
+          <div class="avatar">B</div>
+          <span>Student</span>
+        </div>
+
+      </header>
+
+
+      <!-- STATS -->
+      <section class="stats">
+
+        <div class="stat-card">
+          <span>Current Level</span>
+          <strong id="level">1</strong>
+        </div>
+
+        <div class="stat-card">
+          <span>XP</span>
+          <strong id="xp">0</strong>
+        </div>
+
+        <div class="stat-card">
+          <span>Lessons Complete</span>
+          <strong id="completed">0</strong>
+        </div>
+
+        <div class="stat-card">
+          <span>Study Streak</span>
+          <strong id="streak">🔥 0</strong>
+        </div>
+
+      </section>
+
+
+      <!-- CONTENT -->
+      <section class="content-grid">
+
+        <!-- LESSON -->
+        <article class="lesson-card">
+
+          <div class="lesson-heading">
+
+            <div>
+              <p class="lesson-number" id="lessonNumber">
+                LESSON 1
+              </p>
+
+              <h2 id="lessonTitle">
+                Trusting God
+              </h2>
+            </div>
+
+            <span class="category" id="category">
+              Faith
+            </span>
+
+          </div>
+
+
+          <!-- PROGRESS -->
+          <div class="progress-area">
+
+            <div class="progress-info">
+              <span>Journey Progress</span>
+              <span id="progressPercent">0%</span>
+            </div>
+
+            <div class="progress-bar">
+              <div
+                class="progress-fill"
+                id="progressFill">
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- VERSE -->
+          <section class="verse-card">
+
+            <div class="quote-mark">“</div>
+
+            <p id="verse" class="verse-text">
+              Trust in the Lord with all your heart
+              and lean not on your own understanding.
+            </p>
+
+            <p id="reference" class="reference">
+              Proverbs 3:5
+            </p>
+
+          </section>
+
+
+          <!-- EXPLANATION -->
+          <section class="lesson-section">
+
+            <h3>💡 What this means</h3>
+
+            <p id="explanation">
+              This verse reminds us that we don't have
+              to figure everything out by ourselves.
+              We can trust God and ask Him to guide us.
+            </p>
+
+          </section>
+
+
+          <!-- QUESTION -->
+          <section class="question-section">
+
+            <h3>❓ Check your understanding</h3>
+
+            <p id="question"></p>
+
+            <div id="answers"></div>
+
+          </section>
+
+
+          <!-- REFLECTION -->
+          <section class="reflection">
+
+            <h3>✍️ Personal Reflection</h3>
+
+            <p>
+              Think about today's lesson.
+            </p>
+
+            <textarea
+              id="reflectionText"
+              placeholder="Write your thoughts here...">
+            </textarea>
+
+          </section>
+
+
+          <!-- BUTTONS -->
+          <div class="actions">
+
+            <button
+              class="secondary-button"
+              id="previousBtn">
+              ← Previous
+            </button>
+
+            <button
+              class="primary-button"
+              id="completeBtn">
+              Complete Lesson ✓
+            </button>
+
+          </div>
+
+          <p
+            class="message"
+            id="message">
+          </p>
+
+        </article>
+
+
+        <!-- RIGHT PANEL -->
+        <aside class="right-panel">
+
+          <div class="side-card">
+
+            <h3>📚 Your Lessons</h3>
+
+            <div
+              id="lessonList"
+              class="lesson-list">
+            </div>
+
+          </div>
+
+
+          <div class="challenge-card">
+
+            <div class="challenge-icon">
+              🌟
+            </div>
+
+            <h3>Daily Challenge</h3>
+
+            <p>
+              Read today's verse twice and think
+              about one way you can live it out today.
+            </p>
+
+          </div>
+
+        </aside>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
